@@ -50,6 +50,8 @@ The number of past accidents and the number of speeding violations are slightly 
 As the heat map shows there are not any high correlations among quantitative and categorical variables. 
 
 ## Important results of the advanced analysis
+
+### Feature selection 
 ![image](https://user-images.githubusercontent.com/83495853/209279018-fadc89a5-82e2-44a1-8086-bd94de5a93bb.png)
 
 The plot above shows how useful or valuable each feature was in the construction of the XGBoost trees within the model. The more an attribute is used to make key decisions with decision trees, the higher its relative importance. From the plot we can see that the variables like CREDIT_SCORE, DRIVING_EXPERIENCE, AGE and ANNUAL_MILEAGE has been the important features in determining the XGBoost trees. Features like DUIS, RACE and VEHICLE_TYPE doesn’t seem to have a big impact on the target variable.
@@ -127,4 +129,10 @@ The plot above shows how useful or valuable each feature was in the construction
   </tbody>
 </table>
 
-## Discussion and conclusions
+## Hyperparameter tuning
+
+Choosing a set of optimal hyperparameters for a learning algorithm helps us to get the maximum yield of that algorithm. Therefore, we chose to further improve on XGBoost, Decision Tree and Random Forest classification models by performing Grid Search. 
+The following are the optimal parameters that we obtained by applying randomized grid search to XGBoost, Decision Tree, and Random Forest classification models. 
+![image](https://user-images.githubusercontent.com/83495853/209281615-7a3c9bf1-c14c-49c7-9ac4-23a277ce97a9.png)
+![image](https://user-images.githubusercontent.com/83495853/209281636-b6dc3f06-33d6-404f-bbaf-55728d31675f.png)
+![image](https://user-images.githubusercontent.com/83495853/209281684-8b788da6-3a12-4ccf-9908-448b498a72f7.png)
